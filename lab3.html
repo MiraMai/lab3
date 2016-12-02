@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="lab3.css">
+  <script src="lab3.js"></script>
+  <script src="https://use.fontawesome.com/83ed0fc410.js"></script>
+  <title>Drawing Application</title>
+</head>
+<body>
+  <div id="menudiv">
+  <button id="bars"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></button>
+   
+                   <div id="statusText"></div>
+
+    <div id="menu">
+      <button id="form" class="mode">Choose a form</button>
+      <div id="shapes"><button class="stil" id="C">Circle</button>
+                       <button class="stil" id="T">Triangle</button>
+                       <button class="stil" id="R">Rectangle</button>
+      </div>
+      
+      <button class="mode">Color</button>
+       <br>
+         
+                   <select id="options" class="stil">
+                       <option selected>Color list</option>
+                       <option value="#4253f4">blue</option>
+                       <option value="#db0670">hotpink</option>
+                       <option value="#279305">green</option>
+                       <option value="#0fe2e2">cyan</option>
+                   </select>     
+
+        <br>
+
+
+ <input type="text"  placeholder="Write a hexadecimal color here.." id ="writeColor" /> <br>
+                  
+    <button type="button" id='addButton' class="stil"> Add color to list </button>
+        <br><br>
+        <input type="color" id="colorPicker" class="stil"/>
+        <br>
+        <br>
+     <button id="break" class="stil">Break</button>
+
+        <br>
+        <button id="clear" class="stil">Clear</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+        <button id="jason" class="stil">Export your drawings to JSON</button>
+        <div id="export"></div>
+
+    </div>
+    
+    
+
+
+      
+    
+
+  </div>
+
+  <canvas id="myCanvas" height="500" width="400" style="width: 500px; height: 400px;">Text som visas om webbläsaren inte stöder canvas-elementet</canvas>
+    
+    <div id="statusText"></div>
+    
+    
+  
+</body>
+</html>

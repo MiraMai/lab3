@@ -1,0 +1,63 @@
+canvas {
+  margin-top: 50px;
+  margin-left: 100px;
+  border-radius: 10px;
+  position: block;
+}
+
+#myCanvas {
+  margin-left:25%;
+  /*position: absolute;
+  left: 300px;*/
+  position: relative;
+  top: 50px;
+  left: 50px;
+  border: 2px solid gray;
+}  
+  
+.mode {
+  border: 1px solid gray;
+  background-color: gray;
+  color: white;
+  font-family: Calibri;
+  font-size: 25px;
+  margin-top: 20px;
+  border-radius: 8px;
+
+}
+
+.stil {
+  border-radius: 8px;
+  background-color: hotpink;
+  font-family: Calibri;
+  font-size:16px;
+  color: white;
+  
+}
+.stil:disabled {
+    background-color: deeppink;
+}
+
+
+
+#menu {
+  position: fixed;
+  top: 90px;
+  left: 0px;
+  
+}
+
+#statusText {
+    display: block;
+    background-color: lightgray;
+    border-radius: 8px;
+    position: absolute;
+    padding: 10px;
+    font-family: Calibri;
+  font-size: 25px;
+}
+
+#writeColor {
+    border-radius: 8px;
+}
+

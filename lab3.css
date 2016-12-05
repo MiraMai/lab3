@@ -24,6 +24,7 @@ canvas {
   margin-top: 20px;
   border-radius: 8px;
 
+
 }
 
 .stil {
@@ -44,20 +45,23 @@ canvas {
   position: fixed;
   top: 90px;
   left: 0px;
+  display:none;
   
 }
 
 #statusText {
-    display: block;
+    display: none;
     background-color: lightgray;
     border-radius: 8px;
     position: absolute;
     padding: 10px;
     font-family: Calibri;
-  font-size: 25px;
+    font-size: 25px;
 }
 
 #writeColor {
     border-radius: 8px;
 }
+
+
 

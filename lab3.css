@@ -1,6 +1,3 @@
-
-
-
 canvas {
   margin-top: 50px;
   margin-left: 100px;
@@ -13,7 +10,7 @@ canvas {
   /*position: absolute;
   left: 300px;*/
   position: relative;
-  top: 50px;
+  top: 20px;
   left: 50px;
   border: 2px solid gray;
 }  
@@ -42,7 +39,14 @@ canvas {
     background-color: deeppink;
 }
 
-
+.stil2 {
+  border-radius: 8px;
+  background-color: darkslategray;
+  font-family: Calibri;
+  font-size:16px;
+  color: white;
+  
+}
 
 #menu {
   position: fixed;
@@ -52,8 +56,19 @@ canvas {
   
 }
 
+#toTheRight {
+  background-color: lightgray;
+  padding: 20px;
+  position: fixed;
+  top: 90px;
+  right: 300px;
+  top: 200px;    
+  display:block; 
+}
+
 #statusText {
-    display: none;
+    display: inline-block;
+    margin-left: 20%;
     background-color: lightgray;
     border-radius: 8px;
     position: absolute;

@@ -6,7 +6,9 @@ let canvas = document.getElementById("myCanvas");
 let c = canvas.getContext('2d');
 
 let menuButton = document.getElementById("bars");
+let rita = document.getElementById("rita");    
 let menu = document.getElementById("menu");
+let menuDiv = document.getElementById("menudiv")    
 
 //hämter input 
 let status = document.getElementById("status");
@@ -19,7 +21,6 @@ let R = document.getElementById("R");
     
 let clear = document.getElementById("clear");   
     
-//let select = document.getElementsByTagName('select')[0]; 
 let writeColor = document.getElementById("writeColor"); 
 let addButton = document.getElementById("addButton"); 
 let colorPicker = document.getElementById("colorPicker");
@@ -27,13 +28,23 @@ let options = document.getElementById("options");
 let breakButton = document.getElementById("break");
     
 
-
 //********************************************
-    
+
 //har skapat 2 listor     
    let myDrawing = [];  
    let clickPositions = [];
    
+    //meddelande som ska visas när musen befinner sig över canvas
+    canvas.addEventListener('mouseover', function(){
+        inbox.innerHTML = "Click on the menu to choose a form and start drawing."
+
+    });
+    canvas.addEventListener('mouseleave', function(){
+        inbox.innerHTML = ""
+
+    });
+    
+    
   //gör att man kan lägga till en färg i färg-listan  
      addButton.addEventListener('click',function() {
       if ( writeColor.value.length ==7 && writeColor.value.charAt(0)=='#'){
@@ -64,18 +75,18 @@ menuButton.style.padding = "10px";
 menuButton.style.borderRadius = "8px";
 menuButton.style.backgroundColor = "hotpink";
 menuButton.style.color ="white";
+menuButton.display= "inline-block";
+            
 
+    
 //gör så att meny knappen visar menyn o sen gömmer den om man klickar på den igen + status-baren
 let clickMenuButton = function () {
-
-    if( menu.style.display == 'block' ){
-      menu.style.display = 'none'; 
-        inbox.style.display = 'none'; 
-        
+    
+    if( menu.style.display == 'none' ){
+      menu.style.display = 'block';         
     }
     else {
-      menu.style.display = "block";
-     inbox.style.display = 'block';
+      menu.style.display = "none";
     }
   
   
@@ -216,6 +227,7 @@ console.log(clickPositions);
     let clickClearButton = function () {
         c.clearRect(0, 0, canvas.width, canvas.height);
         clickPositions=[];
+        myDrawing=[];
         inbox.innerHTML = "Your canvas is clear."
 
     }
